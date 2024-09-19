@@ -181,26 +181,47 @@
 // console.log(maxnum);
 
 
-const products = [
-    {
-        name: "t-shirts",
-        prize: 300,
-        count: 10
-    },
-    {
-        name: "pents",
-        prize: 500,
-        count: 12
-    },
-    {
-        name: "watches",
-        prize: 200,
-        count: 5
-    }
-]
+// const products = [
+//     {
+//         name: "t-shirts",
+//         prize: 300,
+//         count: 10
+//     },
+//     {
+//         name: "pents",
+//         prize: 500,
+//         count: 12
+//     },
+//     {
+//         name: "watches",
+//         prize: 200,
+//         count: 5
+//     }
+// ]
 
-const totalvalue = products.reduce((acc, items)=>{
-    return acc + items.prize * items.count
-},0)
+// const totalvalue = products.reduce((acc, items)=>{
+//     return acc + items.prize * items.count
+// },0)
 
-console.log(totalvalue);
+// console.log(totalvalue);
+
+
+// slice()
+// The slice() method in JavaScript returns a portion of an array into a new array. It provides a way to copy an array without modifying its original values.
+
+const num = [1,2,3,4,5,6,7,8]
+
+// const numtwo = num.slice(2, 5)
+// const numthree = num.slice(-4)
+const numfour = num.slice(2)
+
+// console.log(numtwo);
+// console.log(numthree);
+console.log(numfour);
+
+const studs = ["Sem", "John", "Lucky", "Sasuke", "Minato"]
+
+const winners = studs.slice(0, 4)
+
+console.log(winners);
+
