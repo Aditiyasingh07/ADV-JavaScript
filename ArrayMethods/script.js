@@ -209,19 +209,32 @@
 // slice()
 // The slice() method in JavaScript returns a portion of an array into a new array. It provides a way to copy an array without modifying its original values.
 
-const num = [1,2,3,4,5,6,7,8]
+// const num = [1,2,3,4,5,6,7,8]
 
 // const numtwo = num.slice(2, 5)
 // const numthree = num.slice(-4)
-const numfour = num.slice(2)
+// const numfour = num.slice(2)
 
 // console.log(numtwo);
 // console.log(numthree);
-console.log(numfour);
+// console.log(numfour);
 
-const studs = ["Sem", "John", "Lucky", "Sasuke", "Minato"]
+// const studs = ["Sem", "John", "Lucky", "Sasuke", "Minato"]
 
-const winners = studs.slice(0, 4)
+// const winners = studs.slice(0, 4)
 
-console.log(winners);
+// console.log(winners);
+
+
+
+// splice()
+// In JavaScript, splice() is a method that can be used to change the contents of an array by removing or replacing existing elements and/or adding new elements. 
+
+const num = [1,2,3,4,5,6,7,8,9]
+
+// num.splice(3, 4)
+const deletenum = num.splice(3, 4, 10, 11, 12)
+
+console.log(num);
+console.log(deletenum);
 
