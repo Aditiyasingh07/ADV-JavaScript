@@ -89,7 +89,7 @@
 // filter()
 // The filter() method creates a new array filled with elements that pass a test provided by a function. The filter() method does not execute the function for empty elements. The filter() method does not change the original array.
 
-const num = [1,2,3,4,5,6,7,8]
+// const num = [1,2,3,4,5,6,7,8]
 
 // const even = num.filter(isEven)
 
@@ -130,10 +130,77 @@ const num = [1,2,3,4,5,6,7,8]
 
 // console.log(adults);
 
-const number = [1,2,3,2,1,4,5,6,3,4,8,9]
+// const number = [1,2,3,2,1,4,5,6,3,4,8,9]
 
-const nums = number.filter((value, index, arr)=>{
-    return arr.indexOf(value) === index
-})
+// const nums = number.filter((value, index, arr)=>{
+//     return arr.indexOf(value) === index
+// })
 
-console.log(nums);
+// console.log(nums);
+
+
+
+// reduce()
+// The array reduce in JavaScript is a predefined method used to reduce an array to a single value by passing a callback function on each element of the array. It accepts a function executed on all the items of the specified array in the left-to-right sequence. The returned single value is stored in the accumulator.
+
+// const number = [1,2,3,4,5,6,7,8]
+
+// const sumofnum = number.reduce(sum, 0)
+
+// function sum(accumulator, value) {
+//     return accumulator + value
+// }
+
+// console.log(sumofnum);
+
+// const letter = ['H','A','P','P','Y']
+
+// const sumofletter = letter.reduce(sum)
+
+// function sum(accumulator, value) {
+//     return accumulator + value
+// }
+
+// console.log(sumofletter);
+
+
+
+// const number = [1,2,3,4,5,6,7,8]
+
+// const maxnum = number.reduce(max, -Infinity)
+
+// function max(accumulator, value) {
+//     if (accumulator > value) {
+//         return accumulator
+//     }
+//     else{
+//         return value
+//     }
+// }
+
+// console.log(maxnum);
+
+
+const products = [
+    {
+        name: "t-shirts",
+        prize: 300,
+        count: 10
+    },
+    {
+        name: "pents",
+        prize: 500,
+        count: 12
+    },
+    {
+        name: "watches",
+        prize: 200,
+        count: 5
+    }
+]
+
+const totalvalue = products.reduce((acc, items)=>{
+    return acc + items.prize * items.count
+},0)
+
+console.log(totalvalue);
