@@ -1,5 +1,6 @@
 
 // forEach()
+// The forEach loop is a method in JavaScript that allows you to iterate over an array and perform an operation on each element of the array. It takes a callback function as an argument and applies it to each element of the array.
 
 // const num = [4,5,8,9,5,4,23,1]
 // num.forEach((items, index, valu)=>{
@@ -34,6 +35,7 @@
 
 
 // map()
+// In JavaScript, map() is a method of the Array object. It creates a new array by calling a function on every element of the original array and storing the results in a new array. map() returns the new array, and the original array is unchanged.
 
 // const nums = [2,3,4,5,6,7]
 // const products = [
@@ -65,3 +67,73 @@
 
 // console.log(doubleNums);
 
+// const totalproductvalue = products.map(item =>({
+//     name: item.name,
+//     totalvalueofproducts: item.prize*item.count     
+// }))
+// console.log(totalproductvalue);
+
+
+// change srting into number
+// const str = ['1', '2', '3', '4', '5', '6']
+
+// const number = str.map(Number)
+
+// console.log(number);
+// console.log(str);
+
+// console.log(typeof str);
+// console.log(typeof number);
+
+
+// filter()
+// The filter() method creates a new array filled with elements that pass a test provided by a function. The filter() method does not execute the function for empty elements. The filter() method does not change the original array.
+
+const num = [1,2,3,4,5,6,7,8]
+
+// const even = num.filter(isEven)
+
+// function isEven(value) {
+//     return value % 2 === 0 
+// }
+// const odd = num.filter(isOdd)
+
+// function isOdd(value) {
+//     return value % 2 != 0 
+// }
+
+// console.log(odd);
+
+
+// const people = [
+//     {
+//         name: 'John',
+//         age: 21
+//     },
+//     {
+//         name: 'shown',
+//         age: 15
+//     },
+//     {
+//         name: 'johnny',
+//         age: 22
+//     },
+//     {
+//         name: 'Naruto',
+//         age: 18
+//     }
+// ]
+
+// const adults = people.filter((people)=>{
+//     return people.age >= 18
+// })
+
+// console.log(adults);
+
+const number = [1,2,3,2,1,4,5,6,3,4,8,9]
+
+const nums = number.filter((value, index, arr)=>{
+    return arr.indexOf(value) === index
+})
+
+console.log(nums);
